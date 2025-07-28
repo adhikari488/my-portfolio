@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+</head>
+<body>
+    <button id="scrollTopBtn" title="go to top">Button</button>
+    <header>
+        <div class="profile-img">
+            <img src="image copy.png" alt="photo">
+        </div>
+        <div>
+            <h1>Dipendra Adhikari</h1>
+            <p>Web Developer | Designer | Systeam Engineer</p>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <ul display-grid>
+                <li class="Home">Home</li>
+                <li class="Skills">Skills</li>
+                <li class="About">About</li>
+                <li class="Address">Address</li>
+                <li class="Study">Study</li>
+                <li class="Contact"> Contact</li>
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <div class="Home">
+            <h2>Home</h2>
+            <p> Hello I am Dipendra I’m a passionate web development student, currently learning HTML, CSS, JavaScript, and modern frameworks.
+                I love building responsive and user-friendly websites. Explore my work and feel free to connect!</p>
+        </div>
+        <div class="Skills">
+        <h2>  Skills</h2>
+        <h3>web Designer Course Complete</h3>
+        <p><a href="https://codeit.com.np/asset/img/certificate1.jpg">view certificate1</a></p>
+       <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA SCRIPT</li>
+        <li>FIGMA</li>
+       </ul>
+    </div>
+    <div>
+        <h2>About</h2>
+        <p>Hi! I’m Dipendra, a student learning web development. I’m excited to build websites using HTML, CSS, and JavaScript, and I’m also starting to learn React. I enjoy solving problems and creating things on the web.
+
+            As a student, I’m always eager to learn new skills and improve myself. My goal is to become a good web developer in the future and work on interesting projects.</p>
+    </div>
+    <div>
+        <h2>Address</h2>
+        <p>Tsurusawa City Chiba,japan</p>
+    </div>
+    <div>
+        <h2>Study</h2>
+        <p>千葉情報経理専門学校</p>
+    </div>
+    <div>
+        <h2>Contact</h2>
+        <p>dipendraadhikari488@gmail.com</p>
+       
+        <p><a href="http://linkedin.com/in/dipendra-adhikari-68a428349" target="_blank">visit my Linkedin profile</a></p>
+    </div>
+    </section>
+    <section>
+        <footer>
+            <p>2025 Dipendra Adhikari | All Rights Reserved.</p>
+        </footer>
+    </section>
+    <!--js ma scroll button rakheko-->
+    <script>
+        const btn = document.getElementById("scrollTopBtn");
+
+// Show button after scrolling 100px
+window.onscroll = () => {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// Scroll to top smoothly
+btn.onclick = () => {
+  window.scrollTo({
+    top: 3,
+    behavior: "smooth",
+  });
+};
+    </script>
+</body>
+</html>
